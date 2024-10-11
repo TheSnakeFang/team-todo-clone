@@ -1,0 +1,17 @@
+service:
+  jwt_secret: "your-secret-key"
+  frontend_url: "http://localhost:3000"
+  cors:
+    allowed_origins:
+      - "http://localhost:3000"
+      - "https://courageous-palmier-66257c.netlify.app"
+database:
+  type: "sqlite"
+  path: "/app/vikunja/vikunja.db"
+user:
+  default_email_domain: "example.com"
+  enable_registration: true
+  initial_admin:
+    username: "admin"
+    password: "admin_password"
+    email: "admin@example.com"
